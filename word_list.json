@@ -1,0 +1,2550 @@
+{
+  "units": [
+    {
+      "unit": 1,
+      "words": [
+        {
+          "word": "anxious",
+          "meaning": "xavotirlangan, tashvishlangan"
+        },
+        {
+          "word": "awful",
+          "meaning": "juda yomon"
+        },
+        {
+          "word": "consist",
+          "meaning": "iborat bo'lmoq, tarkib topmoq"
+        },
+        {
+          "word": "desire",
+          "meaning": "xohlamoq, istamoq"
+        },
+        {
+          "word": "eager",
+          "meaning": "chanqoq, sabrsiz"
+        },
+        {
+          "word": "household",
+          "meaning": "oila a'zolari"
+        },
+        {
+          "word": "intent",
+          "meaning": "niyat, maqsad"
+        },
+        {
+          "word": "landscape",
+          "meaning": "landshaft, manzara"
+        },
+        {
+          "word": "lift",
+          "meaning": "ko'tarmoq"
+        },
+        {
+          "word": "load",
+          "meaning": "yuklamoq"
+        },
+        {
+          "word": "lung",
+          "meaning": "o'pka"
+        },
+        {
+          "word": "motion",
+          "meaning": "ishora, harakat"
+        },
+        {
+          "word": "pace",
+          "meaning": "temp, sur'at"
+        },
+        {
+          "word": "polite",
+          "meaning": "odobli, aql-xushli"
+        },
+        {
+          "word": "possess",
+          "meaning": "egalik qilmoq, bor bo'lmoq"
+        },
+        {
+          "word": "rapidly",
+          "meaning": "juda tez"
+        },
+        {
+          "word": "remark",
+          "meaning": "ta'kidlamoq"
+        },
+        {
+          "word": "seek",
+          "meaning": "qidirmoq, izlamoq"
+        },
+        {
+          "word": "shine",
+          "meaning": "nur taratmoq, nur sochmoq"
+        },
+        {
+          "word": "spill",
+          "meaning": "to'kmoq, to'kib yubormoq"
+        }
+      ]
+    },
+    {
+      "unit": 2,
+      "words": [
+        {
+          "word": "bring",
+          "meaning": "keltirmoq, olib kelmoq"
+        },
+        {
+          "word": "castle",
+          "meaning": "qasr, saroy"
+        },
+        {
+          "word": "command",
+          "meaning": "buyruq bermoq, buyurmoq"
+        },
+        {
+          "word": "counsel",
+          "meaning": "maslahat bermoq"
+        },
+        {
+          "word": "ensure",
+          "meaning": "ta'minlamoq"
+        },
+        {
+          "word": "explosion",
+          "meaning": "portlash"
+        },
+        {
+          "word": "jewelry",
+          "meaning": "taqinchoq"
+        },
+        {
+          "word": "land",
+          "meaning": "qo'nmoq"
+        },
+        {
+          "word": "meteor",
+          "meaning": "meteorit"
+        },
+        {
+          "word": "monster",
+          "meaning": "mahluq, monster"
+        },
+        {
+          "word": "northern",
+          "meaning": "shimoliy"
+        },
+        {
+          "word": "remote",
+          "meaning": "olis, uzoq"
+        },
+        {
+          "word": "southern",
+          "meaning": "janubiy"
+        },
+        {
+          "word": "statue",
+          "meaning": "haykal"
+        },
+        {
+          "word": "steam",
+          "meaning": "par, bug'"
+        },
+        {
+          "word": "submit",
+          "meaning": "bo'ysunmoq, aytganini qilmoq"
+        },
+        {
+          "word": "temple",
+          "meaning": "ibodatxona"
+        },
+        {
+          "word": "upper",
+          "meaning": "yuqori, ustki"
+        },
+        {
+          "word": "weed",
+          "meaning": "begona o't"
+        },
+        {
+          "word": "wing",
+          "meaning": "qanot"
+        }
+      ]
+    },
+    {
+      "unit": 3,
+      "words": [
+        {
+          "word": "arrow",
+          "meaning": "o'q, yoy"
+        },
+        {
+          "word": "battle",
+          "meaning": "urush"
+        },
+        {
+          "word": "bow",
+          "meaning": "kamon"
+        },
+        {
+          "word": "brave",
+          "meaning": "qo'rqmas, jasur"
+        },
+        {
+          "word": "chief",
+          "meaning": "boshliq, sardor"
+        },
+        {
+          "word": "disadvantage",
+          "meaning": "kamchilik, salbiy jihat"
+        },
+        {
+          "word": "enemy",
+          "meaning": "dushman, g'anim"
+        },
+        {
+          "word": "entrance",
+          "meaning": "kirish yo'li"
+        },
+        {
+          "word": "hardly",
+          "meaning": "arang, zo'rg'a"
+        },
+        {
+          "word": "intend",
+          "meaning": "niyat qilmoq"
+        },
+        {
+          "word": "laughter",
+          "meaning": "kulgi, shodlik"
+        },
+        {
+          "word": "log",
+          "meaning": "g'o'la"
+        },
+        {
+          "word": "military",
+          "meaning": "armiya"
+        },
+        {
+          "word": "obey",
+          "meaning": "bo'ysunmoq, itoat etmoq"
+        },
+        {
+          "word": "secure",
+          "meaning": "olmoq, qo'lga kiritmoq"
+        },
+        {
+          "word": "steady",
+          "meaning": "barqaror, muttasil"
+        },
+        {
+          "word": "trust",
+          "meaning": "ishonmoq, inonmoq"
+        },
+        {
+          "word": "twist",
+          "meaning": "aylantirib bog'lamoq"
+        },
+        {
+          "word": "unless",
+          "meaning": "...magan taqdirda"
+        },
+        {
+          "word": "weapon",
+          "meaning": "qurol-yarog'"
+        }
+      ]
+    },
+    {
+      "unit": 4,
+      "words": [
+        {
+          "word": "chest",
+          "meaning": "bag'r, ko'ks"
+        },
+        {
+          "word": "confidence",
+          "meaning": "ishonch, dadillik"
+        },
+        {
+          "word": "consequence",
+          "meaning": "natija, oqibat"
+        },
+        {
+          "word": "disaster",
+          "meaning": "falokat, halokat"
+        },
+        {
+          "word": "disturb",
+          "meaning": "tashvishga solmoq"
+        },
+        {
+          "word": "estimate",
+          "meaning": "taxminan hisoblamoq"
+        },
+        {
+          "word": "honor",
+          "meaning": "sharaflamoq, hurmat qilmoq"
+        },
+        {
+          "word": "impress",
+          "meaning": "lol qoldirmoq"
+        },
+        {
+          "word": "marathon",
+          "meaning": "marafon"
+        },
+        {
+          "word": "narrow",
+          "meaning": "tor"
+        },
+        {
+          "word": "pale",
+          "meaning": "xira"
+        },
+        {
+          "word": "rough",
+          "meaning": "g'adir-budur, dag'al"
+        },
+        {
+          "word": "satisfy",
+          "meaning": "qoniqtirmoq, mamnun qilmoq"
+        },
+        {
+          "word": "scream",
+          "meaning": "baqirmoq, qichqirmoq"
+        },
+        {
+          "word": "sensitive",
+          "meaning": "sezuvchan, ta'sirchan"
+        },
+        {
+          "word": "shade",
+          "meaning": "soya"
+        },
+        {
+          "word": "supplement",
+          "meaning": "to'ldirmoq, qo'shmoq"
+        },
+        {
+          "word": "terror",
+          "meaning": "dahshat, qo'rquv"
+        },
+        {
+          "word": "threat",
+          "meaning": "xatar, xavf"
+        },
+        {
+          "word": "victim",
+          "meaning": "qurbon"
+        }
+      ]
+    },
+    {
+      "unit": 5,
+      "words": [
+        {
+          "word": "ancestor",
+          "meaning": "ajdod"
+        },
+        {
+          "word": "angle",
+          "meaning": "taraf, tomon, burchak"
+        },
+        {
+          "word": "boot",
+          "meaning": "etik"
+        },
+        {
+          "word": "border",
+          "meaning": "chegara"
+        },
+        {
+          "word": "congratulate",
+          "meaning": "tabriklamoq, qutlamoq"
+        },
+        {
+          "word": "frame",
+          "meaning": "ramka"
+        },
+        {
+          "word": "heaven",
+          "meaning": "jannat"
+        },
+        {
+          "word": "incredible",
+          "meaning": "aqlga sig'mas"
+        },
+        {
+          "word": "legend",
+          "meaning": "afsona"
+        },
+        {
+          "word": "praise",
+          "meaning": "maqtamoq"
+        },
+        {
+          "word": "proceed",
+          "meaning": "bir yo'nalishdan bormoq"
+        },
+        {
+          "word": "pure",
+          "meaning": "sof, musaffo"
+        },
+        {
+          "word": "relative",
+          "meaning": "qarindosh"
+        },
+        {
+          "word": "senior",
+          "meaning": "katta yoshdagi"
+        },
+        {
+          "word": "silent",
+          "meaning": "jim, sokin, tinch"
+        },
+        {
+          "word": "sink",
+          "meaning": "cho'kmoq"
+        },
+        {
+          "word": "superior",
+          "meaning": "ustun, yuqori"
+        },
+        {
+          "word": "surround",
+          "meaning": "o'rab olmoq"
+        },
+        {
+          "word": "thick",
+          "meaning": "qalin, keng"
+        },
+        {
+          "word": "wrap",
+          "meaning": "o'ramoq"
+        }
+      ]
+    },
+    {
+      "unit": 6,
+      "words": [
+        {
+          "word": "abroad",
+          "meaning": "xorij, chet el"
+        },
+        {
+          "word": "anger",
+          "meaning": "jahlini chiqarmoq"
+        },
+        {
+          "word": "bride",
+          "meaning": "kelinchak"
+        },
+        {
+          "word": "brief",
+          "meaning": "qisqa"
+        },
+        {
+          "word": "chase",
+          "meaning": "quvlamoq, quvmoq"
+        },
+        {
+          "word": "disappoint",
+          "meaning": "hafa qilmoq"
+        },
+        {
+          "word": "dive",
+          "meaning": "suvga sakramoq, sho'ng'imoq"
+        },
+        {
+          "word": "exchange",
+          "meaning": "ayirboshlamoq"
+        },
+        {
+          "word": "favor",
+          "meaning": "yordam, muruvvat"
+        },
+        {
+          "word": "fee",
+          "meaning": "to'lov, badal"
+        },
+        {
+          "word": "forever",
+          "meaning": "abadiy, umrbod"
+        },
+        {
+          "word": "guy",
+          "meaning": "erkak kishi"
+        },
+        {
+          "word": "lovely",
+          "meaning": "yoqimli, go'zal"
+        },
+        {
+          "word": "mood",
+          "meaning": "kayfiyat"
+        },
+        {
+          "word": "palace",
+          "meaning": "qasr, saroy"
+        },
+        {
+          "word": "permit",
+          "meaning": "ruxsat etmoq"
+        },
+        {
+          "word": "protest",
+          "meaning": "norozilik bildirmoq"
+        },
+        {
+          "word": "sculpture",
+          "meaning": "haykal"
+        },
+        {
+          "word": "tribe",
+          "meaning": "qabila"
+        },
+        {
+          "word": "youth",
+          "meaning": "yoshlik payt"
+        }
+      ]
+    },
+    {
+      "unit": 7,
+      "words": [
+        {
+          "word": "basis",
+          "meaning": "tartib, yo'nalish"
+        },
+        {
+          "word": "biology",
+          "meaning": "biologiya"
+        },
+        {
+          "word": "cage",
+          "meaning": "qafas"
+        },
+        {
+          "word": "colleague",
+          "meaning": "hamkasb"
+        },
+        {
+          "word": "colony",
+          "meaning": "koloniya, mustamlaka"
+        },
+        {
+          "word": "debate",
+          "meaning": "muhokama qilmoq"
+        },
+        {
+          "word": "depart",
+          "meaning": "jo'namoq, ketmoq"
+        },
+        {
+          "word": "depress",
+          "meaning": "dilini xufton qilmoq"
+        },
+        {
+          "word": "factual",
+          "meaning": "asosli, dalilga boy"
+        },
+        {
+          "word": "fascinate",
+          "meaning": "maftun qilmoq, qiziqtirmoq"
+        },
+        {
+          "word": "mission",
+          "meaning": "missiya, topshiriq"
+        },
+        {
+          "word": "nevertheless",
+          "meaning": "shunga qaramay"
+        },
+        {
+          "word": "occupation",
+          "meaning": "kasb"
+        },
+        {
+          "word": "overseas",
+          "meaning": "okean orti"
+        },
+        {
+          "word": "persuade",
+          "meaning": "ko'ndirmoq"
+        },
+        {
+          "word": "route",
+          "meaning": "marshrut, yo'nalish"
+        },
+        {
+          "word": "ruins",
+          "meaning": "xarobalar"
+        },
+        {
+          "word": "scholar",
+          "meaning": "bilimdon"
+        },
+        {
+          "word": "significant",
+          "meaning": "muhim, ahamiyatli"
+        },
+        {
+          "word": "volcano",
+          "meaning": "vulqon"
+        }
+      ]
+    },
+    {
+      "unit": 8,
+      "words": [
+        {
+          "word": "broad",
+          "meaning": "keng, katta"
+        },
+        {
+          "word": "bush",
+          "meaning": "buta"
+        },
+        {
+          "word": "capable",
+          "meaning": "qobiliyatli, o'quvli"
+        },
+        {
+          "word": "cheat",
+          "meaning": "g'irromlik qilmoq"
+        },
+        {
+          "word": "concentrate",
+          "meaning": "diqqatini jamlamoq"
+        },
+        {
+          "word": "conclude",
+          "meaning": "deb xulosa qilmoq"
+        },
+        {
+          "word": "confident",
+          "meaning": "o'ziga ishongan"
+        },
+        {
+          "word": "considerable",
+          "meaning": "sezilarli, salmoqli"
+        },
+        {
+          "word": "convey",
+          "meaning": "ifodalamoq"
+        },
+        {
+          "word": "definite",
+          "meaning": "aniq, yaqqol"
+        },
+        {
+          "word": "delight",
+          "meaning": "zavq, shavq"
+        },
+        {
+          "word": "destination",
+          "meaning": "manzil"
+        },
+        {
+          "word": "dictate",
+          "meaning": "aytib yozdirmoq"
+        },
+        {
+          "word": "edge",
+          "meaning": "chet, qirra"
+        },
+        {
+          "word": "path",
+          "meaning": "so'qmoq"
+        },
+        {
+          "word": "resort",
+          "meaning": "asos qilib olmoq, asoslanmoq"
+        },
+        {
+          "word": "shadow",
+          "meaning": "soya, ko'lanka"
+        },
+        {
+          "word": "succeed",
+          "meaning": "muvaffaqiyat qozonmoq"
+        },
+        {
+          "word": "suspect",
+          "meaning": "deb hisoblamoq"
+        },
+        {
+          "word": "valley",
+          "meaning": "vodiy"
+        }
+      ]
+    },
+    {
+      "unit": 9,
+      "words": [
+        {
+          "word": "admire",
+          "meaning": "qoyil qolmoq"
+        },
+        {
+          "word": "aid",
+          "meaning": "yordam bermoq"
+        },
+        {
+          "word": "attempt",
+          "meaning": "urinmoq, harakat qilmoq"
+        },
+        {
+          "word": "authority",
+          "meaning": "vakolat, huquq"
+        },
+        {
+          "word": "capital",
+          "meaning": "poytaxt"
+        },
+        {
+          "word": "cooperate",
+          "meaning": "hamkorlik qilmoq"
+        },
+        {
+          "word": "defend",
+          "meaning": "mudofaa qilmoq"
+        },
+        {
+          "word": "destruction",
+          "meaning": "vayrona"
+        },
+        {
+          "word": "disorder",
+          "meaning": "tartibsizlik"
+        },
+        {
+          "word": "division",
+          "meaning": "bo'lish, taqsimlash"
+        },
+        {
+          "word": "enable",
+          "meaning": "imkoniyat bermoq"
+        },
+        {
+          "word": "frustrate",
+          "meaning": "umidsizlantirmoq"
+        },
+        {
+          "word": "govern",
+          "meaning": "nazorat qilmoq, boshqarmoq"
+        },
+        {
+          "word": "plenty",
+          "meaning": "yetarli miqdor"
+        },
+        {
+          "word": "relieve",
+          "meaning": "og'rig'ini yengillashtirmoq"
+        },
+        {
+          "word": "reputation",
+          "meaning": "obro', reputatsiya"
+        },
+        {
+          "word": "royal",
+          "meaning": "qirollik"
+        },
+        {
+          "word": "slave",
+          "meaning": "qul"
+        },
+        {
+          "word": "struggle",
+          "meaning": "kurashmoq, yoqalashmoq"
+        },
+        {
+          "word": "stupid",
+          "meaning": "ahmoq, tentak"
+        }
+      ]
+    },
+    {
+      "unit": 10,
+      "words": [
+        {
+          "word": "citizen",
+          "meaning": "fuqaro"
+        },
+        {
+          "word": "council",
+          "meaning": "kengash, konsullik"
+        },
+        {
+          "word": "declare",
+          "meaning": "e'lon qilmoq, bayon qilmoq"
+        },
+        {
+          "word": "enormous",
+          "meaning": "ulkan, juda katta"
+        },
+        {
+          "word": "extraordinary",
+          "meaning": "g'ayritabiiy, turfa"
+        },
+        {
+          "word": "fog",
+          "meaning": "tuman"
+        },
+        {
+          "word": "funeral",
+          "meaning": "dafn marosimi"
+        },
+        {
+          "word": "giant",
+          "meaning": "bahaybat, gigant"
+        },
+        {
+          "word": "impression",
+          "meaning": "taassurot"
+        },
+        {
+          "word": "income",
+          "meaning": "daromad"
+        },
+        {
+          "word": "mad",
+          "meaning": "badjahl, jahldor"
+        },
+        {
+          "word": "ought",
+          "meaning": "kerak, lozim"
+        },
+        {
+          "word": "resist",
+          "meaning": "qarshilik ko'rsatmoq, kurashmoq"
+        },
+        {
+          "word": "reveal",
+          "meaning": "ko'rsatmoq, fosh qilmoq, ochmoq"
+        },
+        {
+          "word": "rid",
+          "meaning": "xalos qilmoq"
+        },
+        {
+          "word": "sword",
+          "meaning": "qilich, shamshir"
+        },
+        {
+          "word": "tale",
+          "meaning": "ertak, hikoya"
+        },
+        {
+          "word": "trap",
+          "meaning": "tutqunlikda saqlamoq"
+        },
+        {
+          "word": "trial",
+          "meaning": "sud jarayoni"
+        },
+        {
+          "word": "violent",
+          "meaning": "zo'ravon, quturgan"
+        }
+      ]
+    },
+    {
+      "unit": 11,
+      "words": [
+        {
+          "word": "admission",
+          "meaning": "ruxsat, kirish"
+        },
+        {
+          "word": "astronomy",
+          "meaning": "astronomiya"
+        },
+        {
+          "word": "blame",
+          "meaning": "ayblamoq"
+        },
+        {
+          "word": "chemistry",
+          "meaning": "kimyo"
+        },
+        {
+          "word": "despite",
+          "meaning": "ga qaramasdan"
+        },
+        {
+          "word": "dinosaur",
+          "meaning": "dinozavr"
+        },
+        {
+          "word": "exhibit",
+          "meaning": "eksponat"
+        },
+        {
+          "word": "fame",
+          "meaning": "shon-shuhrat, obro'"
+        },
+        {
+          "word": "forecast",
+          "meaning": "ob-havo ma'lumoti"
+        },
+        {
+          "word": "genius",
+          "meaning": "juda aqlli, ziyrak"
+        },
+        {
+          "word": "gentle",
+          "meaning": "muloyim, yuvosh"
+        },
+        {
+          "word": "geography",
+          "meaning": "geografiya"
+        },
+        {
+          "word": "interfere",
+          "meaning": "xalaqit bermoq"
+        },
+        {
+          "word": "lightly",
+          "meaning": "muloyimlik bilan"
+        },
+        {
+          "word": "principal",
+          "meaning": "maktab direktori"
+        },
+        {
+          "word": "row",
+          "meaning": "qator, saf"
+        },
+        {
+          "word": "shelf",
+          "meaning": "tokcha"
+        },
+        {
+          "word": "spite",
+          "meaning": "out of spite = qasddan, jo'rttaga"
+        },
+        {
+          "word": "super",
+          "meaning": "juda yaxshi"
+        },
+        {
+          "word": "wet",
+          "meaning": "nam, xo'l"
+        }
+      ]
+    },
+    {
+      "unit": 12,
+      "words": [
+        {
+          "word": "abuse",
+          "meaning": "haqorat qilmoq, so'kmoq"
+        },
+        {
+          "word": "afford",
+          "meaning": "qurbi yetmoq"
+        },
+        {
+          "word": "bake",
+          "meaning": "pishirmoq"
+        },
+        {
+          "word": "bean",
+          "meaning": "no'xat, loviya"
+        },
+        {
+          "word": "candle",
+          "meaning": "sham"
+        },
+        {
+          "word": "convert",
+          "meaning": "ga aylantirmoq, ga o'zgartirmoq"
+        },
+        {
+          "word": "debt",
+          "meaning": "qarz"
+        },
+        {
+          "word": "decrease",
+          "meaning": "kamaytirmoq, pasaymoq"
+        },
+        {
+          "word": "fault",
+          "meaning": "ayb, xato"
+        },
+        {
+          "word": "fund",
+          "meaning": "fond"
+        },
+        {
+          "word": "generous",
+          "meaning": "sahiy, qo'li ochiq"
+        },
+        {
+          "word": "ingredient",
+          "meaning": "tarkibiy qism, ingredient"
+        },
+        {
+          "word": "insist",
+          "meaning": "talab qilmoq"
+        },
+        {
+          "word": "mess",
+          "meaning": "kir, tartibsizlik"
+        },
+        {
+          "word": "metal",
+          "meaning": "metall, temir"
+        },
+        {
+          "word": "monitor",
+          "meaning": "kuzatib bormoq"
+        },
+        {
+          "word": "oppose",
+          "meaning": "qarshi chiqmoq, yomon ko'rmoq"
+        },
+        {
+          "word": "passive",
+          "meaning": "passiv, sust"
+        },
+        {
+          "word": "quantity",
+          "meaning": "miqdor"
+        },
+        {
+          "word": "sue",
+          "meaning": "sudga bermoq"
+        }
+      ]
+    },
+    {
+      "unit": 13,
+      "words": [
+        {
+          "word": "anxiety",
+          "meaning": "tashvish, xavotir"
+        },
+        {
+          "word": "army",
+          "meaning": "armiya"
+        },
+        {
+          "word": "billion",
+          "meaning": "milliard"
+        },
+        {
+          "word": "carve",
+          "meaning": "kesmoq, to'g'ramoq"
+        },
+        {
+          "word": "consult",
+          "meaning": "yordam so'ramoq"
+        },
+        {
+          "word": "emergency",
+          "meaning": "favqulodda holat"
+        },
+        {
+          "word": "fortune",
+          "meaning": "omad"
+        },
+        {
+          "word": "guarantee",
+          "meaning": "kafolat bermoq"
+        },
+        {
+          "word": "hike",
+          "meaning": "piyoda safarga chiqmoq"
+        },
+        {
+          "word": "initial",
+          "meaning": "birinchi, dastlabki"
+        },
+        {
+          "word": "intense",
+          "meaning": "jadal, juda kuchli"
+        },
+        {
+          "word": "lend",
+          "meaning": "berib turmoq"
+        },
+        {
+          "word": "peak",
+          "meaning": "cho'qqi"
+        },
+        {
+          "word": "potential",
+          "meaning": "potentsial, ehtimoldagi"
+        },
+        {
+          "word": "pride",
+          "meaning": "mamnuniyat, qoniqish"
+        },
+        {
+          "word": "proof",
+          "meaning": "isbot, dalil"
+        },
+        {
+          "word": "quit",
+          "meaning": "to'xtatmoq"
+        },
+        {
+          "word": "spin",
+          "meaning": "aylanmoq"
+        },
+        {
+          "word": "tiny",
+          "meaning": "jajji, kichkina"
+        },
+        {
+          "word": "tutor",
+          "meaning": "repetitor"
+        }
+      ]
+    },
+    {
+      "unit": 14,
+      "words": [
+        {
+          "word": "apparent",
+          "meaning": "aniq, muqarrar"
+        },
+        {
+          "word": "blind",
+          "meaning": "ko'zi ojiz, ko'r"
+        },
+        {
+          "word": "calculate",
+          "meaning": "hisoblamoq"
+        },
+        {
+          "word": "chat",
+          "meaning": "suhbatlashmoq, gaplashmoq"
+        },
+        {
+          "word": "commit",
+          "meaning": "va'da bermoq"
+        },
+        {
+          "word": "compose",
+          "meaning": "tuzmoq, yaratmoq"
+        },
+        {
+          "word": "dormitory",
+          "meaning": "yotoqxona"
+        },
+        {
+          "word": "exhaust",
+          "meaning": "holdan toydirmoq, charchatmoq"
+        },
+        {
+          "word": "greenhouse",
+          "meaning": "issiqxona"
+        },
+        {
+          "word": "ignore",
+          "meaning": "e'tiborsiz qoldirmoq"
+        },
+        {
+          "word": "obvious",
+          "meaning": "aniq, ravshan"
+        },
+        {
+          "word": "physics",
+          "meaning": "fizika"
+        },
+        {
+          "word": "portion",
+          "meaning": "qism, bo'lak"
+        },
+        {
+          "word": "remind",
+          "meaning": "eslatmoq"
+        },
+        {
+          "word": "secretary",
+          "meaning": "kotib(a)"
+        },
+        {
+          "word": "severe",
+          "meaning": "qattiq, jiddiy"
+        },
+        {
+          "word": "talent",
+          "meaning": "iqtidor, talant"
+        },
+        {
+          "word": "thesis",
+          "meaning": "tezis"
+        },
+        {
+          "word": "uniform",
+          "meaning": "forma, maxsus kiyim"
+        },
+        {
+          "word": "vision",
+          "meaning": "ko'rish qobiliyati"
+        }
+      ]
+    },
+    {
+      "unit": 15,
+      "words": [
+        {
+          "word": "absorb",
+          "meaning": "so'rmoq, shimmoq"
+        },
+        {
+          "word": "boss",
+          "meaning": "xo'jayin"
+        },
+        {
+          "word": "committee",
+          "meaning": "qo'mita, komitet"
+        },
+        {
+          "word": "contract",
+          "meaning": "shartnoma"
+        },
+        {
+          "word": "crew",
+          "meaning": "brigada, ekipaj"
+        },
+        {
+          "word": "devote",
+          "meaning": "bag'ishlamoq, sarf etmoq"
+        },
+        {
+          "word": "dig",
+          "meaning": "yer kovlamoq"
+        },
+        {
+          "word": "dine",
+          "meaning": "tushlik qilmoq"
+        },
+        {
+          "word": "donate",
+          "meaning": "in'om qilmoq, hadya qilmoq"
+        },
+        {
+          "word": "double",
+          "meaning": "ikki hissa"
+        },
+        {
+          "word": "elevate",
+          "meaning": "balandroqqa qo'ymoq"
+        },
+        {
+          "word": "flavor",
+          "meaning": "ta'm, maza"
+        },
+        {
+          "word": "foundation",
+          "meaning": "jamg'arma"
+        },
+        {
+          "word": "generation",
+          "meaning": "avlod"
+        },
+        {
+          "word": "handle",
+          "meaning": "band, tutqich"
+        },
+        {
+          "word": "layer",
+          "meaning": "qatlam, qat"
+        },
+        {
+          "word": "mud",
+          "meaning": "loy"
+        },
+        {
+          "word": "smooth",
+          "meaning": "tekis"
+        },
+        {
+          "word": "soil",
+          "meaning": "tuproq"
+        },
+        {
+          "word": "unique",
+          "meaning": "g'ayrioddiy, o'zgacha"
+        }
+      ]
+    },
+    {
+      "unit": 16,
+      "words": [
+        {
+          "word": "chamber",
+          "meaning": "yotoqxona"
+        },
+        {
+          "word": "deny",
+          "meaning": "inkor qilmoq"
+        },
+        {
+          "word": "document",
+          "meaning": "hujjat"
+        },
+        {
+          "word": "emphasize",
+          "meaning": "ta'kidlamoq"
+        },
+        {
+          "word": "fever",
+          "meaning": "isitma"
+        },
+        {
+          "word": "flu",
+          "meaning": "gripp"
+        },
+        {
+          "word": "freeze",
+          "meaning": "sovuqdan qotib qolmoq"
+        },
+        {
+          "word": "gesture",
+          "meaning": "imo-ishora"
+        },
+        {
+          "word": "interrupt",
+          "meaning": "bezovta qilmoq"
+        },
+        {
+          "word": "last",
+          "meaning": "davom etmoq"
+        },
+        {
+          "word": "likeness",
+          "meaning": "o'xshashlik"
+        },
+        {
+          "word": "moreover",
+          "meaning": "bundan tashqari"
+        },
+        {
+          "word": "perspective",
+          "meaning": "nuqtayi nazar, qarash"
+        },
+        {
+          "word": "rational",
+          "meaning": "idrokli, ongli"
+        },
+        {
+          "word": "recover",
+          "meaning": "qayta tiklanmoq, tiklanmoq"
+        },
+        {
+          "word": "rely",
+          "meaning": "suyanmoq, tayanmoq"
+        },
+        {
+          "word": "shock",
+          "meaning": "hayratda qoldirmoq"
+        },
+        {
+          "word": "shy",
+          "meaning": "uyatchan, tortinchoq"
+        },
+        {
+          "word": "stare",
+          "meaning": "tikilmoq"
+        },
+        {
+          "word": "thus",
+          "meaning": "shuning uchun"
+        }
+      ]
+    },
+    {
+      "unit": 17,
+      "words": [
+        {
+          "word": "aim",
+          "meaning": "maqsad"
+        },
+        {
+          "word": "attach",
+          "meaning": "mahkamlamoq"
+        },
+        {
+          "word": "bet",
+          "meaning": "pul tikmoq"
+        },
+        {
+          "word": "carriage",
+          "meaning": "ot arava"
+        },
+        {
+          "word": "classic",
+          "meaning": "odatiy"
+        },
+        {
+          "word": "commute",
+          "meaning": "ishgacha uzoq yo'l yurmoq"
+        },
+        {
+          "word": "confirm",
+          "meaning": "tasdiqlamoq"
+        },
+        {
+          "word": "criticize",
+          "meaning": "tanqid qilmoq"
+        },
+        {
+          "word": "differ",
+          "meaning": "farq qilmoq, o'xshamaslik"
+        },
+        {
+          "word": "expense",
+          "meaning": "chiqim, xarajat"
+        },
+        {
+          "word": "formal",
+          "meaning": "rasmiy"
+        },
+        {
+          "word": "height",
+          "meaning": "bo'y"
+        },
+        {
+          "word": "invent",
+          "meaning": "ixtiro qilmoq"
+        },
+        {
+          "word": "junior",
+          "meaning": "kichik mansabli"
+        },
+        {
+          "word": "labor",
+          "meaning": "mehnat"
+        },
+        {
+          "word": "mechanic",
+          "meaning": "mexanik"
+        },
+        {
+          "word": "prime",
+          "meaning": "eng asosiy, bosh"
+        },
+        {
+          "word": "shift",
+          "meaning": "joyini o'zgartirmoq"
+        },
+        {
+          "word": "signal",
+          "meaning": "signal, belgi"
+        },
+        {
+          "word": "sincere",
+          "meaning": "samimiy"
+        }
+      ]
+    },
+    {
+      "unit": 18,
+      "words": [
+        {
+          "word": "ability",
+          "meaning": "qobiliyat, iste'dod"
+        },
+        {
+          "word": "agriculture",
+          "meaning": "qishloq xo'jaligi"
+        },
+        {
+          "word": "cartoon",
+          "meaning": "multfilm"
+        },
+        {
+          "word": "ceiling",
+          "meaning": "shift, patalog"
+        },
+        {
+          "word": "convince",
+          "meaning": "ishontirmoq"
+        },
+        {
+          "word": "curious",
+          "meaning": "qiziquvchan, qiziqqon"
+        },
+        {
+          "word": "delay",
+          "meaning": "qoldirmoq, kechiktirmoq"
+        },
+        {
+          "word": "diary",
+          "meaning": "kundalik"
+        },
+        {
+          "word": "element",
+          "meaning": "element, tarkibiy qism"
+        },
+        {
+          "word": "faith",
+          "meaning": "ishonch"
+        },
+        {
+          "word": "grain",
+          "meaning": "don, don-dun"
+        },
+        {
+          "word": "greet",
+          "meaning": "salomlashmoq"
+        },
+        {
+          "word": "investigate",
+          "meaning": "o'rganib chiqmoq"
+        },
+        {
+          "word": "joy",
+          "meaning": "shodlik, xursandchilik"
+        },
+        {
+          "word": "label",
+          "meaning": "yorliq"
+        },
+        {
+          "word": "monk",
+          "meaning": "rohib"
+        },
+        {
+          "word": "odd",
+          "meaning": "g'alati, g'ayrioddiy"
+        },
+        {
+          "word": "pause",
+          "meaning": "to'xtatmoq"
+        },
+        {
+          "word": "priest",
+          "meaning": "ruhoniy"
+        },
+        {
+          "word": "profession",
+          "meaning": "kasb"
+        }
+      ]
+    },
+    {
+      "unit": 19,
+      "words": [
+        {
+          "word": "adopt",
+          "meaning": "farzandlikka olmoq"
+        },
+        {
+          "word": "beg",
+          "meaning": "sadaqa so'ramoq"
+        },
+        {
+          "word": "beyond",
+          "meaning": "narigi tarafida"
+        },
+        {
+          "word": "costume",
+          "meaning": "kiyim"
+        },
+        {
+          "word": "exclaim",
+          "meaning": "xitob qilmoq"
+        },
+        {
+          "word": "extend",
+          "meaning": "cho'zmoq, uzaytirmoq"
+        },
+        {
+          "word": "fool",
+          "meaning": "ahmoq, esi past"
+        },
+        {
+          "word": "forbid",
+          "meaning": "ta'qiqlamoq"
+        },
+        {
+          "word": "illustrate",
+          "meaning": "ko'rsatmoq"
+        },
+        {
+          "word": "indeed",
+          "meaning": "haqiqatan"
+        },
+        {
+          "word": "interpret",
+          "meaning": "izohlamoq, tushuntirib bermoq"
+        },
+        {
+          "word": "kindly",
+          "meaning": "muloyimlik bilan"
+        },
+        {
+          "word": "motive",
+          "meaning": "sabab"
+        },
+        {
+          "word": "nest",
+          "meaning": "uya, in"
+        },
+        {
+          "word": "origin",
+          "meaning": "kelib chiqish"
+        },
+        {
+          "word": "reception",
+          "meaning": "to'y marosimi"
+        },
+        {
+          "word": "reject",
+          "meaning": "rad etmoq"
+        },
+        {
+          "word": "silence",
+          "meaning": "jimlik, sukunat"
+        },
+        {
+          "word": "stream",
+          "meaning": "daryocha"
+        },
+        {
+          "word": "tone",
+          "meaning": "ovoz, ton"
+        }
+      ]
+    },
+    {
+      "unit": 20,
+      "words": [
+        {
+          "word": "accomplish",
+          "meaning": "bajarmoq, a'do etmoq"
+        },
+        {
+          "word": "approve",
+          "meaning": "yoqtirmoq, to'g'ri deb qabul qilmoq"
+        },
+        {
+          "word": "approximate",
+          "meaning": "deyarli to'g'ri"
+        },
+        {
+          "word": "barrier",
+          "meaning": "to'siq, g'ov"
+        },
+        {
+          "word": "detect",
+          "meaning": "sezmoq, bilib qolmoq"
+        },
+        {
+          "word": "duty",
+          "meaning": "burch, vazifa"
+        },
+        {
+          "word": "elementary",
+          "meaning": "boshlang'ich"
+        },
+        {
+          "word": "failure",
+          "meaning": "muvaffaqiyatsizlik"
+        },
+        {
+          "word": "gradual",
+          "meaning": "bosqichma-bosqich"
+        },
+        {
+          "word": "immigrant",
+          "meaning": "immigrant"
+        },
+        {
+          "word": "insert",
+          "meaning": "ichiga qo'ymoq"
+        },
+        {
+          "word": "instant",
+          "meaning": "on, lahza"
+        },
+        {
+          "word": "poverty",
+          "meaning": "qashshoqlik"
+        },
+        {
+          "word": "pretend",
+          "meaning": "dek tutmoq"
+        },
+        {
+          "word": "rank",
+          "meaning": "martaba, unvon"
+        },
+        {
+          "word": "recognition",
+          "meaning": "hurmat qilish"
+        },
+        {
+          "word": "refrigerate",
+          "meaning": "muzlatgichda saqlamoq"
+        },
+        {
+          "word": "rent",
+          "meaning": "ijara haqqi"
+        },
+        {
+          "word": "retire",
+          "meaning": "iste'foga chiqmoq"
+        },
+        {
+          "word": "statistic",
+          "meaning": "statistika"
+        }
+      ]
+    },
+    {
+      "unit": 21,
+      "words": [
+        {
+          "word": "astronaut",
+          "meaning": "astronavt"
+        },
+        {
+          "word": "awake",
+          "meaning": "uyg'oq"
+        },
+        {
+          "word": "courage",
+          "meaning": "dovyuraklik, botirlik"
+        },
+        {
+          "word": "float",
+          "meaning": "suv ustida suzmoq"
+        },
+        {
+          "word": "grant",
+          "meaning": "bermoq"
+        },
+        {
+          "word": "gravity",
+          "meaning": "gravitatsiya"
+        },
+        {
+          "word": "jewel",
+          "meaning": "qimmatbaho tosh"
+        },
+        {
+          "word": "miner",
+          "meaning": "konchi, shaxtyor"
+        },
+        {
+          "word": "mineral",
+          "meaning": "mineral"
+        },
+        {
+          "word": "participate",
+          "meaning": "ishtirok etmoq"
+        },
+        {
+          "word": "permission",
+          "meaning": "ruxsat"
+        },
+        {
+          "word": "pour",
+          "meaning": "quymoq"
+        },
+        {
+          "word": "presence",
+          "meaning": "bor bo'lish, mavjudlik"
+        },
+        {
+          "word": "raw",
+          "meaning": "xom, pishmagan"
+        },
+        {
+          "word": "satellite",
+          "meaning": "sun'iy yo'ldosh"
+        },
+        {
+          "word": "scale",
+          "meaning": "kattalik, ko'lam"
+        },
+        {
+          "word": "skip",
+          "meaning": "bajarmaslik, qilmaslik, o'tkazib yuborish"
+        },
+        {
+          "word": "stretch",
+          "meaning": "cho'zmoq"
+        },
+        {
+          "word": "telescope",
+          "meaning": "teleskop"
+        },
+        {
+          "word": "underground",
+          "meaning": "yer ostida"
+        }
+      ]
+    },
+    {
+      "unit": 22,
+      "words": [
+        {
+          "word": "alarm",
+          "meaning": "signalizatsiya"
+        },
+        {
+          "word": "apart",
+          "meaning": "alohida"
+        },
+        {
+          "word": "arrest",
+          "meaning": "hibsga olmoq"
+        },
+        {
+          "word": "award",
+          "meaning": "mukofot, sovrin"
+        },
+        {
+          "word": "breed",
+          "meaning": "zot, nasl"
+        },
+        {
+          "word": "bucket",
+          "meaning": "chelak, paqir"
+        },
+        {
+          "word": "contest",
+          "meaning": "musobaqa"
+        },
+        {
+          "word": "convict",
+          "meaning": "hukm qilmoq"
+        },
+        {
+          "word": "garage",
+          "meaning": "garaj"
+        },
+        {
+          "word": "journalist",
+          "meaning": "jurnalist"
+        },
+        {
+          "word": "pup",
+          "meaning": "kuchukcha"
+        },
+        {
+          "word": "qualify",
+          "meaning": "keyingi bosqichga o'tmoq"
+        },
+        {
+          "word": "repair",
+          "meaning": "ta'mirlamoq, tuzatmoq"
+        },
+        {
+          "word": "resume",
+          "meaning": "qaytadan boshlamoq"
+        },
+        {
+          "word": "rob",
+          "meaning": "o'g'irlamoq"
+        },
+        {
+          "word": "slip",
+          "meaning": "sirpanib ketmoq"
+        },
+        {
+          "word": "somewhat",
+          "meaning": "biroz, andak"
+        },
+        {
+          "word": "stable",
+          "meaning": "mustahkam"
+        },
+        {
+          "word": "tissue",
+          "meaning": "salfetka"
+        },
+        {
+          "word": "yard",
+          "meaning": "ochiq maydoncha"
+        }
+      ]
+    },
+    {
+      "unit": 23,
+      "words": [
+        {
+          "word": "alike",
+          "meaning": "o'xshash"
+        },
+        {
+          "word": "annoy",
+          "meaning": "achchiqlantirmoq, jonga tegmoq"
+        },
+        {
+          "word": "architecture",
+          "meaning": "arxitektura"
+        },
+        {
+          "word": "artificial",
+          "meaning": "sun'iy, yasama"
+        },
+        {
+          "word": "chain",
+          "meaning": "zanjir"
+        },
+        {
+          "word": "distinct",
+          "meaning": "farqli"
+        },
+        {
+          "word": "distinguish",
+          "meaning": "ajratmoq, farqiga bormoq"
+        },
+        {
+          "word": "dust",
+          "meaning": "chang"
+        },
+        {
+          "word": "excitement",
+          "meaning": "xursandchilik"
+        },
+        {
+          "word": "heal",
+          "meaning": "tuzalmoq"
+        },
+        {
+          "word": "inherit",
+          "meaning": "meros qilib olmoq"
+        },
+        {
+          "word": "manner",
+          "meaning": "o'zini tutish tarzi"
+        },
+        {
+          "word": "mount",
+          "meaning": "ko'paymoq, ortib ketmoq"
+        },
+        {
+          "word": "roof",
+          "meaning": "tom"
+        },
+        {
+          "word": "shortage",
+          "meaning": "tanqislik"
+        },
+        {
+          "word": "solid",
+          "meaning": "qattiq"
+        },
+        {
+          "word": "stock",
+          "meaning": "zahira, zapas"
+        },
+        {
+          "word": "substance",
+          "meaning": "modda"
+        },
+        {
+          "word": "tomb",
+          "meaning": "qabr"
+        },
+        {
+          "word": "wound",
+          "meaning": "jarohat, yara"
+        }
+      ]
+    },
+    {
+      "unit": 24,
+      "words": [
+        {
+          "word": "bath",
+          "meaning": "vanna"
+        },
+        {
+          "word": "bend",
+          "meaning": "bukmoq"
+        },
+        {
+          "word": "chew",
+          "meaning": "chaynamoq"
+        },
+        {
+          "word": "disabled",
+          "meaning": "nogiron"
+        },
+        {
+          "word": "fantastic",
+          "meaning": "ajoyib"
+        },
+        {
+          "word": "fiction",
+          "meaning": "fantastik asar"
+        },
+        {
+          "word": "flag",
+          "meaning": "bayroq"
+        },
+        {
+          "word": "inspect",
+          "meaning": "tekshirmoq"
+        },
+        {
+          "word": "journal",
+          "meaning": "jurnal"
+        },
+        {
+          "word": "liquid",
+          "meaning": "suyuqlik"
+        },
+        {
+          "word": "marvel",
+          "meaning": "hayron qolmoq"
+        },
+        {
+          "word": "nutrient",
+          "meaning": "ozuqa"
+        },
+        {
+          "word": "overcome",
+          "meaning": "ustun kelmoq, yengib o'tmoq"
+        },
+        {
+          "word": "recall",
+          "meaning": "eslamoq"
+        },
+        {
+          "word": "regret",
+          "meaning": "afsuslanmoq, pushaymon qilmoq"
+        },
+        {
+          "word": "soul",
+          "meaning": "ruh"
+        },
+        {
+          "word": "sufficient",
+          "meaning": "yetarli"
+        },
+        {
+          "word": "surgery",
+          "meaning": "jarrohlik"
+        },
+        {
+          "word": "tough",
+          "meaning": "qiyin"
+        },
+        {
+          "word": "tube",
+          "meaning": "quvur"
+        }
+      ]
+    },
+    {
+      "unit": 25,
+      "words": [
+        {
+          "word": "admit",
+          "meaning": "tan olmoq"
+        },
+        {
+          "word": "bin",
+          "meaning": "quti, yashik"
+        },
+        {
+          "word": "bowl",
+          "meaning": "kosa"
+        },
+        {
+          "word": "cabin",
+          "meaning": "kulba"
+        },
+        {
+          "word": "cash",
+          "meaning": "naqd pul"
+        },
+        {
+          "word": "criminal",
+          "meaning": "jinoyatchi"
+        },
+        {
+          "word": "dozen",
+          "meaning": "o'n ikkita"
+        },
+        {
+          "word": "elder",
+          "meaning": "yoshi ulug'roq"
+        },
+        {
+          "word": "facial",
+          "meaning": "yuzdagi"
+        },
+        {
+          "word": "fence",
+          "meaning": "devor, to'siq"
+        },
+        {
+          "word": "inspire",
+          "meaning": "ilhomlantirmoq"
+        },
+        {
+          "word": "mere",
+          "meaning": "arzimagan"
+        },
+        {
+          "word": "neat",
+          "meaning": "toza, ozoda"
+        },
+        {
+          "word": "occasion",
+          "meaning": "tadbir, voqea"
+        },
+        {
+          "word": "penalty",
+          "meaning": "jarima"
+        },
+        {
+          "word": "rude",
+          "meaning": "qo'pol, odobsiz"
+        },
+        {
+          "word": "settle",
+          "meaning": "hal qilmoq, bir yoqli qilmoq"
+        },
+        {
+          "word": "vehicle",
+          "meaning": "transport vositasi"
+        },
+        {
+          "word": "wallet",
+          "meaning": "hamyon, karmon"
+        },
+        {
+          "word": "yell",
+          "meaning": "dodlamoq, dod solmoq"
+        }
+      ]
+    },
+    {
+      "unit": 26,
+      "words": [
+        {
+          "word": "accuse",
+          "meaning": "ayblamoq"
+        },
+        {
+          "word": "adjust",
+          "meaning": "o'zgartirmoq"
+        },
+        {
+          "word": "amuse",
+          "meaning": "kuldirmoq, qiziqtirmoq"
+        },
+        {
+          "word": "coral",
+          "meaning": "marjon"
+        },
+        {
+          "word": "cotton",
+          "meaning": "paxta"
+        },
+        {
+          "word": "crash",
+          "meaning": "avariya bo'lmoq, to'qnashmoq"
+        },
+        {
+          "word": "deck",
+          "meaning": "paluba"
+        },
+        {
+          "word": "engage",
+          "meaning": "band bo'lmoq"
+        },
+        {
+          "word": "firm",
+          "meaning": "mustahkam, qattiq"
+        },
+        {
+          "word": "grand",
+          "meaning": "hashamatli"
+        },
+        {
+          "word": "hurricane",
+          "meaning": "kuchli dovul"
+        },
+        {
+          "word": "loss",
+          "meaning": "yo'qotish, boy berish"
+        },
+        {
+          "word": "plain",
+          "meaning": "oddiy"
+        },
+        {
+          "word": "reef",
+          "meaning": "cho'g'irtosh, rif"
+        },
+        {
+          "word": "shut",
+          "meaning": "yopib qo'ymoq"
+        },
+        {
+          "word": "strict",
+          "meaning": "qattiqqo'l, talabchan"
+        },
+        {
+          "word": "surf",
+          "meaning": "syorfing uchmoq"
+        },
+        {
+          "word": "task",
+          "meaning": "vazifa, ish"
+        },
+        {
+          "word": "zone",
+          "meaning": "hudud, zona"
+        }
+      ]
+    },
+    {
+      "unit": 27,
+      "words": [
+        {
+          "word": "apology",
+          "meaning": "uzr, kechirim"
+        },
+        {
+          "word": "bold",
+          "meaning": "qo'rqmas"
+        },
+        {
+          "word": "capture",
+          "meaning": "ushlamoq, tutmoq"
+        },
+        {
+          "word": "cardinal",
+          "meaning": "eng muhim"
+        },
+        {
+          "word": "duke",
+          "meaning": "gertsog"
+        },
+        {
+          "word": "expose",
+          "meaning": "oshkor qilmoq"
+        },
+        {
+          "word": "guilty",
+          "meaning": "aybdor"
+        },
+        {
+          "word": "hire",
+          "meaning": "yollamoq"
+        },
+        {
+          "word": "innocent",
+          "meaning": "aybsiz, beayb"
+        },
+        {
+          "word": "jail",
+          "meaning": "turma, qamoq"
+        },
+        {
+          "word": "minister",
+          "meaning": "vazir"
+        },
+        {
+          "word": "ordinary",
+          "meaning": "oddiy"
+        },
+        {
+          "word": "permanent",
+          "meaning": "o'zgarmas, abadiy"
+        },
+        {
+          "word": "preserve",
+          "meaning": "ehtiyot qilmoq, saqlamoq"
+        },
+        {
+          "word": "pronounce",
+          "meaning": "talaffuz qilmoq"
+        },
+        {
+          "word": "resemble",
+          "meaning": "o'xshamoq"
+        },
+        {
+          "word": "symptom",
+          "meaning": "simptom, alomat"
+        },
+        {
+          "word": "tobacco",
+          "meaning": "tamaki"
+        },
+        {
+          "word": "twin",
+          "meaning": "egizaklar"
+        },
+        {
+          "word": "witch",
+          "meaning": "jodugar"
+        }
+      ]
+    },
+    {
+      "unit": 28,
+      "words": [
+        {
+          "word": "accompany",
+          "meaning": "sherik bo'lmoq, hamroh bo'lmoq"
+        },
+        {
+          "word": "bare",
+          "meaning": "yalang'och"
+        },
+        {
+          "word": "branch",
+          "meaning": "shox"
+        },
+        {
+          "word": "breath",
+          "meaning": "nafas"
+        },
+        {
+          "word": "bridge",
+          "meaning": "ko'prik"
+        },
+        {
+          "word": "cast",
+          "meaning": "otmoq, uloqtirmoq"
+        },
+        {
+          "word": "dare",
+          "meaning": "jur'at etmoq"
+        },
+        {
+          "word": "electronic",
+          "meaning": "elektron"
+        },
+        {
+          "word": "inn",
+          "meaning": "mehmonxona"
+        },
+        {
+          "word": "net",
+          "meaning": "to'r"
+        },
+        {
+          "word": "philosophy",
+          "meaning": "falsafa"
+        },
+        {
+          "word": "pot",
+          "meaning": "qozon"
+        },
+        {
+          "word": "seed",
+          "meaning": "urug'"
+        },
+        {
+          "word": "sharp",
+          "meaning": "o'tkir, keskir"
+        },
+        {
+          "word": "sort",
+          "meaning": "tur, nav"
+        },
+        {
+          "word": "subtract",
+          "meaning": "ayirmoq"
+        },
+        {
+          "word": "tight",
+          "meaning": "tarang, qattiq"
+        },
+        {
+          "word": "virtual",
+          "meaning": "virtual"
+        },
+        {
+          "word": "weigh",
+          "meaning": "tortmoq, og'irligi bo'lmoq"
+        },
+        {
+          "word": "whisper",
+          "meaning": "shivirlamoq"
+        }
+      ]
+    },
+    {
+      "unit": 29,
+      "words": [
+        {
+          "word": "abstract",
+          "meaning": "mavhum"
+        },
+        {
+          "word": "annual",
+          "meaning": "yillik"
+        },
+        {
+          "word": "clay",
+          "meaning": "gil"
+        },
+        {
+          "word": "cloth",
+          "meaning": "gazlama"
+        },
+        {
+          "word": "curtain",
+          "meaning": "parda"
+        },
+        {
+          "word": "deserve",
+          "meaning": "sazovor bo'lmoq"
+        },
+        {
+          "word": "feather",
+          "meaning": "pat"
+        },
+        {
+          "word": "fertile",
+          "meaning": "unumdor, hosildor"
+        },
+        {
+          "word": "flood",
+          "meaning": "suv toshqini"
+        },
+        {
+          "word": "furniture",
+          "meaning": "mebel"
+        },
+        {
+          "word": "grave",
+          "meaning": "qabr"
+        },
+        {
+          "word": "ideal",
+          "meaning": "ideal, bekamu ko'st"
+        },
+        {
+          "word": "intelligence",
+          "meaning": "o'qimishlilik, ziyolilik"
+        },
+        {
+          "word": "nowadays",
+          "meaning": "hozirda, hozirgi paytda"
+        },
+        {
+          "word": "obtain",
+          "meaning": "qo'lga kiritmoq"
+        },
+        {
+          "word": "religious",
+          "meaning": "diniy"
+        },
+        {
+          "word": "romantic",
+          "meaning": "romantik, ishqiy"
+        },
+        {
+          "word": "shell",
+          "meaning": "chig'anoq"
+        },
+        {
+          "word": "shore",
+          "meaning": "qirg'oq, sohil"
+        },
+        {
+          "word": "wheel",
+          "meaning": "g'ildirak"
+        }
+      ]
+    },
+    {
+      "unit": 30,
+      "words": [
+        {
+          "word": "appeal",
+          "meaning": "qiziqtirmoq, jalb qilmoq"
+        },
+        {
+          "word": "assume",
+          "meaning": "taxmin qilmoq"
+        },
+        {
+          "word": "borrow",
+          "meaning": "qarzga olmoq"
+        },
+        {
+          "word": "client",
+          "meaning": "mijoz"
+        },
+        {
+          "word": "downtown",
+          "meaning": "shahar markazi"
+        },
+        {
+          "word": "dull",
+          "meaning": "zerikarli"
+        },
+        {
+          "word": "embarrass",
+          "meaning": "xijolat qilmoq, uyaltirmoq"
+        },
+        {
+          "word": "fare",
+          "meaning": "yo'l haqi"
+        },
+        {
+          "word": "former",
+          "meaning": "oldingi, sobiq"
+        },
+        {
+          "word": "formula",
+          "meaning": "formula"
+        },
+        {
+          "word": "found",
+          "meaning": "asos solmoq"
+        },
+        {
+          "word": "invest",
+          "meaning": "pul sarf qilmoq"
+        },
+        {
+          "word": "loan",
+          "meaning": "qarz berish"
+        },
+        {
+          "word": "practical",
+          "meaning": "foydali"
+        },
+        {
+          "word": "quarter",
+          "meaning": "25 sentlik tanga"
+        },
+        {
+          "word": "salary",
+          "meaning": "maosh"
+        },
+        {
+          "word": "scholarship",
+          "meaning": "stipendiya, grant"
+        },
+        {
+          "word": "temporary",
+          "meaning": "vaqtinchalik"
+        },
+        {
+          "word": "treasure",
+          "meaning": "xazina"
+        },
+        {
+          "word": "urge",
+          "meaning": "undamoq"
+        }
+      ]
+    }
+  ]
+}
