@@ -1,0 +1,10 @@
+services:
+  english-study-bot:
+    build: .
+    restart: unless-stopped
+    environment:
+      BOT_TOKEN: "${BOT_TOKEN:?Set BOT_TOKEN in the server environment}"
+      DATA_FILE: /data/state.json
+      TZ_OFFSET_MINUTES: "${TZ_OFFSET_MINUTES:-300}"
+    volumes:
+      - ./data:/data

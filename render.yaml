@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: english-self-study-bot
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /healthz
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: DATA_FILE
+        value: /tmp/state.json
+      - key: MATERIALS_DIR
+        value: /app/materials
+      - key: TZ_OFFSET_MINUTES
+        value: "300"
+      - key: PORT
+        value: "10000"

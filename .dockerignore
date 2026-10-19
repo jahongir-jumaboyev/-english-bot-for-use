@@ -1,0 +1,10 @@
+.git
+.env
+data
+node_modules
+Listening book
+Reading book
+Red Murphy
+*.pdf
+README.md
+package-lock.json
