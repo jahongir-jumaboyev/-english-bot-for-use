@@ -1,14 +1,18 @@
 const test = require("node:test");
 const assert = require("node:assert/strict");
 const {
+  appendSentenceLines,
   countSentenceLines,
   createWebhookServer,
+  createSerialQueue,
   dueQueue,
+  escapeText,
   loadVocabulary,
   localDate,
   makeProgress,
   motivationForProgress,
   normalizeAnswer,
+  recordTaskSubmission,
   reviewSchedule,
 } = require("./bot");
 
@@ -28,8 +32,55 @@ test("sentence submission counts non-empty lines", () => {
   assert.equal(countSentenceLines("I study.\n\nShe reads.\n They listen. "), 3);
 });
 
+test("sentence submission rejects extra lines instead of silently discarding them", () => {
+  const user = { days: {} };
+  user.pendingInput = { type: "sentences" };
+  const initial = appendSentenceLines(user, "2026-01-01", Array.from({ length: 28 }, (_, index) => `Sentence ${index + 1}`), 101);
+  assert.equal(initial.accepted, true);
+  const duplicate = appendSentenceLines(user, "2026-01-01", ["Sentence 28"], 101);
+  assert.equal(duplicate.duplicate, true);
+  assert.equal(duplicate.count, 28);
+  const extra = appendSentenceLines(user, "2026-01-01", ["Sentence 29", "Sentence 30", "Sentence 31"], 102);
+  assert.deepEqual(extra, { accepted: false, count: 28, remaining: 2 });
+  assert.equal(user.days["2026-01-01"].submissions.sentences.length, 28);
+  const finish = appendSentenceLines(user, "2026-01-01", ["Sentence 29", "Sentence 30"], 103);
+  assert.equal(finish.completed, true);
+  assert.equal(user.days["2026-01-01"].tasks.sentences, true);
+});
+
+test("grammar, reading, and listening submissions are stored with their completion status", () => {
+  const user = { days: {} };
+  recordTaskSubmission(user, "grammar", "Murphy Unit 1", "2026-01-01");
+  recordTaskSubmission(user, "reading", "1A, 2C, 3B", "2026-01-01");
+  recordTaskSubmission(user, "listening", "1D, 2A", "2026-01-01");
+  const daily = user.days["2026-01-01"];
+  assert.deepEqual(daily.submissions, {
+    grammar: "Murphy Unit 1",
+    reading: "1A, 2C, 3B",
+    listening: "1D, 2A",
+  });
+  assert.deepEqual(daily.tasks, { grammar: true, reading: true, listening: true });
+});
+
 test("answer normalization ignores case, whitespace, and basic punctuation", () => {
   assert.equal(normalizeAnswer("  I'M  READY! "), "i'm ready");
+});
+
+test("Telegram message sanitization preserves line breaks", () => {
+  assert.equal(escapeText("first\r\nsecond\u0000third"), "first\nsecond third");
+});
+
+test("scheduled work and webhook updates run in a single ordered queue", async () => {
+  const events = [];
+  const enqueue = createSerialQueue((error) => { throw error; });
+  const first = enqueue(async () => {
+    events.push("first-start");
+    await new Promise((resolve) => setTimeout(resolve, 10));
+    events.push("first-end");
+  });
+  const second = enqueue(async () => events.push("second"));
+  await Promise.all([first, second]);
+  assert.deepEqual(events, ["first-start", "first-end", "second"]);
 });
 
 test("due reviews are limited to overdue unchecked stages", () => {

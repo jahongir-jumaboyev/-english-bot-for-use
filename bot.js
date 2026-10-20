@@ -7,8 +7,9 @@ const TOKEN = process.env.BOT_TOKEN;
 const API = TOKEN ? `https://api.telegram.org/bot${TOKEN}` : null;
 const ROOT = __dirname;
 const DATA_FILE = process.env.DATA_FILE || path.join(ROOT, "data", "state.json");
-const MATERIALS_DIR = process.env.MATERIALS_DIR || path.join(ROOT, "Essential books");
-const TZ_OFFSET_MINUTES = Number.parseInt(process.env.TZ_OFFSET_MINUTES || "300", 10);
+const MATERIALS_DIR = process.env.MATERIALS_DIR || ROOT;
+const TZ_OFFSET_VALUE = process.env.TZ_OFFSET_MINUTES || "300";
+const TZ_OFFSET_MINUTES = Number(TZ_OFFSET_VALUE);
 const DAY_MS = 24 * 60 * 60 * 1000;
 const REVIEW_DELAYS = [
   25 * 60 * 1000,
@@ -48,13 +49,43 @@ function countSentenceLines(text) {
     .filter(Boolean).length;
 }
 
+function appendSentenceLines(user, day, lines, messageId) {
+  const daily = getDay(user, day);
+  const savedLines = daily.submissions.sentences;
+  const currentLines = Array.isArray(savedLines) ? savedLines : [];
+  const remaining = 30 - currentLines.length;
+  if (Number.isInteger(messageId) && user.pendingInput?.lastMessageId === messageId) {
+    return { accepted: false, duplicate: true, count: currentLines.length, remaining };
+  }
+  if (lines.length === 0 || lines.length > remaining) {
+    return { accepted: false, count: currentLines.length, remaining };
+  }
+  if (Number.isInteger(messageId) && user.pendingInput) {
+    user.pendingInput.lastMessageId = messageId;
+  }
+  daily.submissions.sentences = [...currentLines, ...lines];
+  const count = daily.submissions.sentences.length;
+  if (count === 30) daily.tasks.sentences = true;
+  return { accepted: true, count, remaining: 30 - count, completed: count === 30 };
+}
+
+function recordTaskSubmission(user, task, content, day) {
+  const daily = getDay(user, day);
+  daily.tasks[task] = true;
+  daily.submissions[task] = content;
+}
+
 function emptyDay() {
-  return { tasks: {}, newUnits: [] };
+  return { tasks: {}, newUnits: [], submissions: {} };
 }
 
 function getDay(user, day) {
   if (!user.days[day]) user.days[day] = emptyDay();
-  return user.days[day];
+  const daily = user.days[day];
+  daily.tasks ||= {};
+  daily.newUnits ||= [];
+  daily.submissions ||= {};
+  return daily;
 }
 
 function makeProgress(user, day, now = Date.now()) {
@@ -111,7 +142,18 @@ function normalizeAnswer(value) {
 }
 
 function escapeText(value) {
-  return String(value).replace(/[\u0000-\u001f]/gu, " ");
+  return String(value)
+    .replace(/\r\n?/gu, "\n")
+    .replace(/[\u0000-\u0008\u000b\u000c\u000e-\u001f\u007f]/gu, " ");
+}
+
+function createSerialQueue(onError) {
+  let pending = Promise.resolve();
+  return (work) => {
+    const current = pending.then(work);
+    pending = current.catch(onError);
+    return current;
+  };
 }
 
 async function loadVocabulary() {
@@ -138,10 +180,19 @@ async function loadVocabulary() {
 async function readState() {
   try {
     const state = JSON.parse(await fs.readFile(DATA_FILE, "utf8"));
-    if (!state.users || typeof state.users !== "object") throw new Error("Invalid bot state file");
-    return state;
+    if (!state.users || typeof state.users !== "object" || Array.isArray(state.users)) {
+      throw new Error("Invalid bot state file");
+    }
+    return {
+      ...state,
+      lastUpdateId: Number.isInteger(state.lastUpdateId)
+        ? state.lastUpdateId
+        : Number.isInteger(state.offset)
+          ? state.offset - 1
+          : -1,
+    };
   } catch (error) {
-    if (error.code === "ENOENT") return { offset: 0, users: {} };
+    if (error.code === "ENOENT") return { lastUpdateId: -1, users: {} };
     throw error;
   }
 }
@@ -426,9 +477,10 @@ async function handleCommand(message, user) {
 
   if (command === "/sentences") {
     user.pendingInput = { type: "sentences" };
-    user.sentenceLines = [];
+    const savedCount = getDay(user, day).submissions.sentences?.length || 0;
+    user.sentenceLines = getDay(user, day).submissions.sentences || [];
     await saveState();
-    await sendMessage(chatId, "Murphy mavzusidagi 30 ta gapingizni yuboring — har bir gapni alohida qatorda yozing. Hozircha xatolar avtomatik tuzatilmaydi.");
+    await sendMessage(chatId, `Murphy mavzusidagi 30 ta gapingizni yuboring — har bir gapni alohida qatorda yozing. ${savedCount}/30 ta gap saqlangan; ${30 - savedCount} ta qoldi. Hozircha xatolar avtomatik tuzatilmaydi.`);
     return;
   }
 
@@ -456,25 +508,35 @@ async function handleMessage(message) {
 
   if (type === "sentences") {
     const lines = content.split(/\r?\n/u).map((line) => line.trim()).filter(Boolean);
-    user.sentenceLines.push(...lines);
-    const count = user.sentenceLines.length;
-    if (count < 30) {
-      await saveState();
-      await sendMessage(message.chat.id, `${count}/30 ta gap qabul qilindi. Qolgan ${30 - count} tasini yuboring.`);
+    const day = localDate();
+    const result = appendSentenceLines(user, day, lines, message.message_id);
+    if (result.duplicate) {
+      await sendMessage(message.chat.id, `${result.count}/30 ta gap saqlangan. ${result.remaining} ta gap qoldi.`);
       return;
     }
-    user.sentenceLines = user.sentenceLines.slice(0, 30);
+    if (!result.accepted) {
+      const prompt = lines.length === 0
+        ? "Kamida bitta gap yuboring."
+        : `Faqat ${result.remaining} ta gap qoldi, lekin siz ${lines.length} ta yubordingiz. Iltimos, ${result.remaining} ta gapdan ko‘p bo‘lmagan xabar yuboring.`;
+      await sendMessage(message.chat.id, `${prompt} Hozircha ${result.count}/30 ta gap saqlandi.`);
+      return;
+    }
+    user.sentenceLines = result.completed ? [] : user.days[day].submissions.sentences;
+    if (!result.completed) {
+      await saveState();
+      await sendMessage(message.chat.id, `${result.count}/30 ta gap qabul qilindi. Qolgan ${result.remaining} tasini yuboring.`);
+      return;
+    }
     user.pendingInput = null;
-    getDay(user, localDate()).tasks.sentences = true;
     await saveState();
-    const progress = makeProgress(user, localDate());
+    const progress = makeProgress(user, day);
     await sendMessage(message.chat.id, `30 ta gap qabul qilindi. Vazifa bajarildi deb hisoblandi; grammatik xatolar hozircha tekshirilmaydi.\n\n${motivationForProgress(progress.percent)}`);
     return;
   }
 
   user.pendingInput = null;
   const day = localDate();
-  getDay(user, day).tasks[type] = true;
+  recordTaskSubmission(user, type, content, day);
   await saveState();
   const progress = makeProgress(user, day);
   await sendMessage(message.chat.id, `${TASK_LABELS[type]} javoblari saqlandi va vazifa bajarildi deb belgilandi. Avtomatik xato tekshiruvi hozircha yoqilmagan.\n\n${motivationForProgress(progress.percent)}`);
@@ -537,32 +599,36 @@ async function handleCallback(callback) {
 async function sendDueNotifications(now = new Date()) {
   const timestamp = now.getTime();
   for (const [chatId, user] of Object.entries(state.users)) {
-    const due = dueQueue(user, timestamp);
-    const day = localDate(now);
-    const unnotified = due.filter(({ itemId, stage }) => {
-      const item = user.vocabulary.find((candidate) => candidate.id === itemId);
-      if (!Array.isArray(item.notified)) item.notified = [false, false, false, false, false, false];
-      return !item.notified[stage];
-    });
-    if (unnotified.length) {
-      await sendMessage(
-        chatId,
-        `Lug‘at takrorlash vaqti keldi: ${unnotified.length} ta takrorlash kutmoqda. Boshlash uchun tugmani bosing.`,
-        { inline_keyboard: [[{ text: "Takrorlashni boshlash", callback_data: "review:begin" }]] },
-      );
-      for (const entry of unnotified) {
-        const item = user.vocabulary.find((candidate) => candidate.id === entry.itemId);
-        item.notified[entry.stage] = true;
+    try {
+      const due = dueQueue(user, timestamp);
+      const day = localDate(now);
+      const unnotified = due.filter(({ itemId, stage }) => {
+        const item = user.vocabulary.find((candidate) => candidate.id === itemId);
+        if (!Array.isArray(item.notified)) item.notified = [false, false, false, false, false, false];
+        return !item.notified[stage];
+      });
+      if (unnotified.length) {
+        await sendMessage(
+          chatId,
+          `Lug‘at takrorlash vaqti keldi: ${unnotified.length} ta takrorlash kutmoqda. Boshlash uchun tugmani bosing.`,
+          { inline_keyboard: [[{ text: "Takrorlashni boshlash", callback_data: "review:begin" }]] },
+        );
+        for (const entry of unnotified) {
+          const item = user.vocabulary.find((candidate) => candidate.id === entry.itemId);
+          item.notified[entry.stage] = true;
+        }
+        await saveState();
       }
-      await saveState();
-    }
 
-    const shifted = new Date(timestamp + TZ_OFFSET_MINUTES * 60_000);
-    const localHour = shifted.getUTCHours();
-    if (localHour >= 21 && user.lastDailySent !== day) {
-      await sendProgress(Number(chatId), user, day);
-      user.lastDailySent = day;
-      await saveState();
+      const shifted = new Date(timestamp + TZ_OFFSET_MINUTES * 60_000);
+      const localHour = shifted.getUTCHours();
+      if (localHour >= 21 && user.lastDailySent !== day) {
+        await sendProgress(Number(chatId), user, day);
+        user.lastDailySent = day;
+        await saveState();
+      }
+    } catch (error) {
+      console.error(`Failed to send scheduled notification to chat ${chatId}:`, error);
     }
   }
 }
@@ -593,19 +659,15 @@ async function main() {
   if (!webhookUrl || !webhookUrl.startsWith("https://")) {
     throw new Error("Set WEBHOOK_URL to a public HTTPS URL, or deploy this service to Render.");
   }
-  const port = Number.parseInt(process.env.PORT || "10000", 10);
+  const port = Number(process.env.PORT || "10000");
   if (!Number.isInteger(port) || port < 1 || port > 65535) {
     throw new Error("PORT must be a valid TCP port.");
   }
   const webhookSecret = randomBytes(32).toString("hex");
-  let pendingUpdates = Promise.resolve();
-  const server = createWebhookServer(webhookSecret, (update) => {
-    const currentUpdate = pendingUpdates.then(() => processTelegramUpdate(update));
-    pendingUpdates = currentUpdate.catch((error) => {
-      console.error("Telegram update failed:", error);
-    });
-    return currentUpdate;
-  });
+  const enqueueWork = createSerialQueue((error) => console.error("Queued bot work failed:", error));
+  const server = createWebhookServer(webhookSecret, (update) =>
+    enqueueWork(() => processTelegramUpdate(update)),
+  );
   await new Promise((resolve, reject) => {
     server.once("error", reject);
     server.listen(port, "0.0.0.0", resolve);
@@ -626,9 +688,11 @@ async function main() {
     allowed_updates: ["message", "callback_query"],
   });
   setInterval(() => {
-    sendDueNotifications().catch((error) => console.error("Scheduled notification failed:", error));
+    enqueueWork(() => sendDueNotifications()).catch((error) => {
+      console.error("Scheduled notification failed:", error);
+    });
   }, 60_000);
-  await sendDueNotifications();
+  await enqueueWork(() => sendDueNotifications());
   console.log(`English study Telegram bot webhook listening on port ${port}.`);
 }
 
@@ -641,12 +705,16 @@ if (require.main === module) {
 
 module.exports = {
   countSentenceLines,
+  appendSentenceLines,
   createWebhookServer,
+  createSerialQueue,
   dueQueue,
+  escapeText,
   loadVocabulary,
   localDate,
   makeProgress,
   motivationForProgress,
   normalizeAnswer,
+  recordTaskSubmission,
   reviewSchedule,
 };

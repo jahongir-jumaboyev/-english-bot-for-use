@@ -2,8 +2,8 @@ FROM node:20-alpine
 
 WORKDIR /app
 COPY package.json bot.js ./
-COPY ["Essential books/word_list.json", "materials/word_list.json"]
-COPY ["Essential books/words2.json", "materials/words2.json"]
+COPY word_list.json materials/word_list.json
+COPY words2.json materials/words2.json
 
 ENV DATA_FILE=/data/state.json
 ENV MATERIALS_DIR=/app/materials

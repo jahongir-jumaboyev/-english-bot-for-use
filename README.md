@@ -15,11 +15,11 @@ Bot lug‘at takrorlash jadvalini, kunlik vazifalarni va bajarilgan ishlar foizi
 
 **Boshqa cheklovlar:** AI tekshiruvi o‘chiq. Bot hozircha grammatik gaplarni tuzatmaydi; reading/listening javoblarini qabul qilib, topshirilgan deb hisoblaydi, lekin xatolarni javob kaliti bilan solishtirmaydi. Reading uchun javoblar kaliti bor, uni tekshiruvga ulash kerak. Listening papkasida alohida audio fayllar ko‘rinmadi.
 
-## Render’да бепул Web Service яратиш
+## Render’da bepul Web Service yaratish
 
 1. Telegram’da `@BotFather` orqali bot yarating va token oling. Tokenni chatga yubormang.
 2. Loyiha fayllarini o‘zingizning GitHub repozitoriyingizga joylang. Telegram tokenini repozitoriyga qo‘shmang.
-3. Render’da **New → Blueprint** orqali GitHub omboringizni ulang. `render.yaml` bepul Web Service, webhook va sog‘liq tekshiruvini sozlaydi.
+3. Render’da **New → Blueprint** orqali GitHub omboringizni ulang. `render.yaml` bepul Web Service, webhook va sog‘liq tekshiruvini sozlaydi. `word_list.json` va `words2.json` GitHub omborining bosh papkasida bo‘lishi kerak; Dockerfile ularni shu yerdan olib, konteyner ichidagi `materials` papkasiga joylaydi.
 4. Blueprint yaratilayotganda `BOT_TOKEN` maydoniga BotFather tokenini kiriting. Tokenni faqat Render’dagi maxfiy environment variable sifatida saqlang.
 5. Render deploy tugagach Telegram’da botga `/start` yuboring.
 
@@ -31,7 +31,7 @@ Bot lug‘at takrorlash jadvalini, kunlik vazifalarni va bajarilgan ishlar foizi
 docker compose build
 ```
 
-Konteyner Telegram webhookini qabul qilishi uchun unga internetdan ochiq HTTPS manzil kerak; mahalliy `localhost` webhook sifatida ishlamaydi. Render’ga deploy qilinganda webhook avtomatik sozlanadi.
+Konteynerni Render’dan tashqarida ishga tushirish uchun `BOT_TOKEN` bilan birga Telegram kira oladigan ochiq HTTPS `WEBHOOK_URL` ham kerak. Mahalliy `localhost` webhook sifatida ishlamaydi. Render’ga deploy qilinganda webhook manzili avtomatik aniqlanadi.
 
 ## Buyruqlar
 

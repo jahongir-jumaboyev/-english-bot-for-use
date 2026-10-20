@@ -5,6 +5,9 @@ services:
     environment:
       BOT_TOKEN: "${BOT_TOKEN:?Set BOT_TOKEN in the server environment}"
       DATA_FILE: /data/state.json
+      MATERIALS_DIR: /app/materials
       TZ_OFFSET_MINUTES: "${TZ_OFFSET_MINUTES:-300}"
+      PORT: "10000"
+      WEBHOOK_URL: "${WEBHOOK_URL:?Set WEBHOOK_URL to a public HTTPS URL}"
     volumes:
       - ./data:/data
