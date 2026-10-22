@@ -9,5 +9,7 @@ services:
       TZ_OFFSET_MINUTES: "${TZ_OFFSET_MINUTES:-300}"
       PORT: "10000"
       WEBHOOK_URL: "${WEBHOOK_URL:?Set WEBHOOK_URL to a public HTTPS URL}"
+      ANTHROPIC_API_KEY: "${ANTHROPIC_API_KEY:-}"
+      ALLOWED_CHAT_IDS: "${ALLOWED_CHAT_IDS:-}"
     volumes:
       - ./data:/data

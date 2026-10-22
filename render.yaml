@@ -9,6 +9,10 @@ services:
     envVars:
       - key: BOT_TOKEN
         sync: false
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: ALLOWED_CHAT_IDS
+        sync: false
       - key: DATA_FILE
         value: /tmp/state.json
       - key: MATERIALS_DIR

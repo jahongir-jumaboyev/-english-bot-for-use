@@ -1,13 +1,1 @@
-{
-  "name": "english-self-study-bot",
-  "version": "1.0.0",
-  "private": true,
-  "description": "Telegram bot for tracking English self-study and vocabulary reviews",
-  "scripts": {
-    "start": "node bot.js",
-    "test": "node --test"
-  },
-  "engines": {
-    "node": ">=20"
-  }
-}
+{"name":"english-self-study-bot","version":"1.1.0","private":true,"description":"Telegram bot for tracking English self-study and vocabulary reviews","scripts":{"start":"node bot.js","test":"node --test"},"engines":{"node":">=20"}}
